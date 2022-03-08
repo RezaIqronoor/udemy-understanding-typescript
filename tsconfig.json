@@ -99,7 +99,6 @@
   },
   "exclude": [
     "node_modules", // would be default.
-    "_2-typescript-basics-&-basic-types",
-    "_4-next-generation-js-&-ts",
+    "course-chapters/*",
   ]
 }
