@@ -13,7 +13,7 @@
 //     /**
 //      * This is a Tuple types, it gives you a fixed length array,
 //      * along with fixed position of where a type of variable
-//      * should be.
+//      * should be and it's type.
 //      *
 //      * ex: type number should be in pos 0
 //      */
