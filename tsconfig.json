@@ -99,6 +99,6 @@
   },
   "exclude": [
     "node_modules", // would be default.
-    "course-chapters/*",
+    "course-chapters",
   ]
 }
