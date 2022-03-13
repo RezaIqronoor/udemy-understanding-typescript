@@ -37,4 +37,58 @@ function countAndDescribe(element) {
     return [element, descriptionText];
 }
 console.log(countAndDescribe(["Sports", "Cooking"]));
+/**
+ * This function wants to return a proprety of an object that is passed as
+ * a frist parameters using the second parameters
+ * to make sure that the parametes ( object key ) does exist in the object that is being passed
+ * use the keyword "keyof"
+ */
+function extractAndConvert(obj, key) {
+    return obj[key];
+}
+extractAndConvert({ name: "Max" }, "name");
+/**
+ * Generic Class, maybe you don't care what kind of type that you will use.
+ * use this generic class.
+ */
+class DataStorage {
+    constructor() {
+        this.data = [];
+    }
+    addItem(item) {
+        this.data.push(item);
+    }
+    removeItem(item) {
+        if (this.data.indexOf(item) === -1) {
+            return;
+        }
+        this.data.splice(this.data.indexOf(item), 1);
+    }
+    getItems() {
+        return [...this.data];
+    }
+}
+const textStorage = new DataStorage();
+textStorage.addItem("Max");
+textStorage.addItem("Manu");
+textStorage.removeItem("Max");
+console.log(textStorage.getItems());
+const numberStorage = new DataStorage();
+function createCourseGoal(title, description, completeUntil) {
+    /**
+     * This makes courseGoal of type CourseGoal's properties optional.
+     * So you don't have to initialize the object with each of the properties.
+     * When returning, you must type case it to CourseGoal back.
+     */
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = completeUntil;
+    return courseGoal;
+}
+/**
+ * Readonly makes the array locked, can't push nor pop.
+ */
+const names = ["Max", "Anna"];
+// names.push("Manu");
 //# sourceMappingURL=app.js.map
