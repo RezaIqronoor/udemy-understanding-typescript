@@ -171,6 +171,7 @@ function validate(obj) {
         return true;
     }
     let isValid = true;
+    console.log(objValidatorConfig);
     for (const prop in objValidatorConfig) {
         for (const validator of objValidatorConfig[prop]) {
             switch (validator) {
