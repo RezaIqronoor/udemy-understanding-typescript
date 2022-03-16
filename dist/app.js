@@ -135,7 +135,7 @@ class ProjectList extends Component {
 // ProjectInput Class
 class ProjectInput extends Component {
     constructor() {
-        super("project_input", "app", true, "user-input");
+        super("project-input", "app", true, "user-input");
         this.titleInputElement = this.element.querySelector("#title");
         this.descriptionInputElement = this.element.querySelector("#description");
         this.peopleInputElement = this.element.querySelector("#people");
